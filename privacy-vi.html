@@ -67,12 +67,14 @@
         <ul>
           <li><strong>Thông tin tài khoản</strong> từ Đăng nhập bằng Google: tên, địa chỉ email, ảnh đại diện và mã tài khoản Google.</li>
           <li><strong>Nội dung bạn tạo</strong>: các từ bạn thêm, thẻ từ vựng (nghĩa, câu ví dụ, ảnh minh hoạ AI bạn chọn), nội dung bạn sửa, danh sách yêu thích và tin nhắn bạn gửi cho gia sư AI.</li>
+          <li><strong>Buổi Luyện nói &amp; giao tiếp</strong>: tình huống bạn chọn, các câu bạn nói hoặc gõ và câu trả lời của AI (dạng chữ), nhiệm vụ đã hoàn thành, nhận xét và báo cáo điểm của buổi luyện.</li>
           <li><strong>Hoạt động học tập</strong>: kết quả ôn thẻ và quiz, chuỗi ngày học, thống kê học theo ngày, cài đặt thông báo, và số lượt dùng AI mỗi ngày (để áp dụng hạn mức).</li>
           <li><strong>Thông tin mua hàng</strong>: trạng thái gói Pro, loại gói và ngày hết hạn, được xác minh với Google Play. Việc thanh toán do Google Play xử lý hoàn toàn; chúng tôi không bao giờ nhận thông tin thẻ hay tài khoản ngân hàng của bạn.</li>
           <li><strong>Mã định danh thiết bị và ứng dụng</strong>: mã cài đặt Firebase (mã ngẫu nhiên cho lần cài đặt ứng dụng này, không gắn với số điện thoại hay mã nhận dạng quảng cáo), dùng cho Crashlytics và App Check.</li>
           <li><strong>Chẩn đoán và bảo mật</strong>: báo cáo sự cố kèm thông tin kỹ thuật (đời máy, phiên bản Android, phiên bản ứng dụng) qua Firebase Crashlytics, và kiểm tra tính toàn vẹn của ứng dụng qua Firebase App Check / Google Play Integrity để chặn lạm dụng dịch vụ.</li>
         </ul>
-        <p>Chúng tôi <strong>không</strong> thu thập vị trí, danh bạ, ảnh hay tệp trên máy, âm thanh micro hay mã nhận dạng quảng cáo. Ứng dụng không hiển thị quảng cáo.</p>
+        <p><strong>Micro và giọng nói.</strong> Ứng dụng chỉ xin quyền micro khi bạn chạm nút micro trong Luyện nói &amp; giao tiếp. Giọng nói của bạn được dịch vụ nhận dạng giọng nói của hệ thống Android trên máy (thường do Google cung cấp, theo chính sách của nhà cung cấp đó) chuyển thành chữ; ứng dụng chỉ nhận lại phần chữ. Chúng tôi <strong>không ghi âm, không lưu và không gửi âm thanh</strong> lên máy chủ của chúng tôi. Bạn luôn có thể gõ phím thay cho nói.</p>
+        <p>Chúng tôi <strong>không</strong> thu thập vị trí, danh bạ, ảnh hay tệp trên máy, bản ghi âm hay mã nhận dạng quảng cáo. Ứng dụng không hiển thị quảng cáo.</p>
       </div>
 
       <div id="s3" class="terms-item">
@@ -80,6 +82,7 @@
         <ul>
           <li>Đăng nhập và đồng bộ thẻ, tiến độ học giữa các thiết bị của bạn.</li>
           <li>Tạo nội dung thẻ (phiên âm, nghĩa, câu ví dụ, ảnh minh hoạ), quiz AI và câu trả lời của gia sư AI.</li>
+          <li>Đóng vai trò chuyện trong Luyện nói &amp; giao tiếp, nhận xét câu bạn nói và tạo báo cáo cuối buổi; lưu lịch sử buổi luyện để bạn xem lại trên các thiết bị.</li>
           <li>Hiển thị thống kê, chuỗi ngày học và gửi nhắc học khi bạn bật.</li>
           <li>Xác minh gói Pro và áp dụng hạn mức sử dụng hằng ngày theo gói.</li>
           <li>Giữ an toàn cho ứng dụng, chống lạm dụng và sửa lỗi.</li>
@@ -93,24 +96,25 @@
         <p>Chúng tôi không bán, cho thuê hay trao đổi dữ liệu cá nhân của bạn. Dữ liệu chỉ được chia sẻ với các nhà cung cấp dịch vụ vận hành ứng dụng cho chúng tôi, và chỉ cho các mục đích nêu trên:</p>
         <ul>
           <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Functions, Crashlytics, App Check) — tài khoản, lưu trữ, máy chủ, báo cáo sự cố, kiểm tra toàn vẹn ứng dụng.</li>
-          <li><strong>Google Gemini API</strong> — các từ bạn nhập và tin nhắn gửi gia sư AI được gửi qua máy chủ của chúng tôi tới Gemini API của Google để tạo nội dung. Tên và email của bạn không được gửi đi.</li>
+          <li><strong>Google Gemini API</strong> — các từ bạn nhập, tin nhắn gửi gia sư AI và các câu (dạng chữ) trong buổi Luyện nói được gửi qua máy chủ của chúng tôi tới Gemini API của Google để tạo nội dung. Tên và email của bạn không được gửi đi.</li>
           <li><strong>Google Play Billing</strong> — xử lý thanh toán gói Pro.</li>
+          <li><strong>Dịch vụ nhận dạng giọng nói của Android</strong> (thường là Google) — chỉ khi bạn dùng micro, để chuyển giọng nói thành chữ ngay trên thiết bị hoặc qua dịch vụ của nhà cung cấp đó.</li>
         </ul>
         <p>Chúng tôi có thể cung cấp dữ liệu khi pháp luật yêu cầu hoặc để bảo vệ quyền và sự an toàn của người dùng.</p>
       </div>
 
       <div id="s5" class="terms-item">
         <h3><span class="n">5</span><span>Lưu trữ, chuyển dữ liệu và bảo mật</span></h3>
-        <p>Dữ liệu được lưu trên máy chủ Google Cloud / Firebase, có thể đặt ngoài Việt Nam (ví dụ Đài Loan, Singapore). Dữ liệu được mã hoá khi truyền (HTTPS) và khi lưu trữ bởi Google Cloud; quyền truy cập được giới hạn để mỗi người dùng chỉ đọc được dữ liệu của chính mình. Một bản sao thẻ được lưu trên điện thoại để ứng dụng dùng được khi không có mạng.</p>
+        <p>Dữ liệu được lưu trên máy chủ Google Cloud / Firebase, có thể đặt ngoài Việt Nam (ví dụ Đài Loan, Singapore). Dữ liệu được mã hoá khi truyền (HTTPS) và khi lưu trữ bởi Google Cloud; quyền truy cập được giới hạn để mỗi người dùng chỉ đọc được dữ liệu của chính mình. Một bản sao thẻ và buổi Luyện nói được lưu trên điện thoại để ứng dụng dùng được khi không có mạng.</p>
       </div>
 
       <div id="s6" class="terms-item">
         <h3><span class="n">6</span><span>Thời gian lưu và xoá dữ liệu</span></h3>
         <p>Chúng tôi lưu dữ liệu trong thời gian tài khoản của bạn còn tồn tại.</p>
         <ul>
-          <li>Bạn có thể xoá từng thẻ và xoá cuộc trò chuyện với gia sư AI trong ứng dụng bất cứ lúc nào.</li>
+          <li>Bạn có thể xoá từng thẻ, xoá cuộc trò chuyện với gia sư AI và xoá từng buổi Luyện nói trong ứng dụng bất cứ lúc nào.</li>
           <li>Bạn có thể xoá tài khoản trong ứng dụng: <strong>Hồ sơ → Xóa tài khoản</strong>. Nếu không còn ứng dụng, hãy gửi email từ địa chỉ Gmail dùng để đăng nhập; chúng tôi xoá tài khoản trong vòng 30 ngày.</li>
-          <li>Khi tài khoản bị xoá, toàn bộ dữ liệu của tài khoản bị xoá: thông tin tài khoản, thẻ, hoạt động học tập, bộ đếm lượt dùng và trạng thái gói.</li>
+          <li>Khi tài khoản bị xoá, toàn bộ dữ liệu của tài khoản bị xoá: thông tin tài khoản, thẻ, buổi Luyện nói, hoạt động học tập, bộ đếm lượt dùng và trạng thái gói.</li>
           <li>Báo cáo sự cố được Firebase tự xoá trong vòng 90 ngày. Lịch sử mua hàng do Google Play lưu theo chính sách của Google. Xoá tài khoản không tự huỷ gói đăng ký — hãy huỷ trong Google Play.</li>
         </ul>
         <p>Hướng dẫn đầy đủ: <a href="xoa-tai-khoan.html">Xoá tài khoản</a>.</p>

@@ -67,12 +67,14 @@
         <ul>
           <li><strong>Account information</strong> from Google Sign-In: your name, email address, profile photo and Google account ID.</li>
           <li><strong>Content you create</strong>: the words you add, your flashcards (meanings, example sentences, the AI illustration you choose), your edits and favorites, and the messages you send to the AI tutor.</li>
+          <li><strong>Speaking &amp; conversation practice sessions</strong>: the scenario you choose, what you say or type and the AI's replies (as text), completed missions, and the feedback and score report for each session.</li>
           <li><strong>Learning activity</strong>: review and quiz results, streaks, daily study statistics, notification settings, and how many AI actions you used each day (to apply daily limits).</li>
           <li><strong>Purchase information</strong>: your Pro subscription status, product and expiry date, verified with Google Play. Payments are handled entirely by Google Play; we never receive your card or bank details.</li>
           <li><strong>Device and app identifiers</strong>: a Firebase installation ID (a random identifier for this installation of the app, not linked to your phone number or advertising ID), used by Crashlytics and App Check.</li>
           <li><strong>Diagnostics and security</strong>: crash reports with technical details (device model, Android version, app version) via Firebase Crashlytics, and app-integrity checks via Firebase App Check / Google Play Integrity to block abuse of the app's services.</li>
         </ul>
-        <p>We do <strong>not</strong> collect your location, contacts, photos or files on your device, microphone audio, or advertising ID. The app shows no ads.</p>
+        <p><strong>Microphone and voice.</strong> The app asks for microphone access only when you tap the microphone button in Speaking &amp; conversation practice. Your speech is converted to text by the Android system speech recognition service on your device (usually provided by Google, under that provider's policies); the app only receives the resulting text. We <strong>do not record, store or send audio</strong> to our servers. You can always type instead of speaking.</p>
+        <p>We do <strong>not</strong> collect your location, contacts, photos or files on your device, audio recordings, or advertising ID. The app shows no ads.</p>
       </div>
 
       <div id="s3" class="terms-item">
@@ -80,6 +82,7 @@
         <ul>
           <li>Sign you in and keep your flashcards and progress in sync across your devices.</li>
           <li>Generate flashcard content (pronunciation, meanings, examples, illustrations), AI quizzes and AI tutor replies.</li>
+          <li>Run role-play conversations in Speaking &amp; conversation practice, give feedback on what you say and create the end-of-session report; keep your practice history so you can review it on your devices.</li>
           <li>Show your statistics and streaks, and send the study reminders you turn on.</li>
           <li>Verify your Pro subscription and apply the daily usage limits of your plan.</li>
           <li>Keep the app secure, prevent abuse, and fix crashes.</li>
@@ -93,24 +96,25 @@
         <p>We do not sell, rent or trade your personal data. We share data only with service providers that run the app for us, and only for the purposes above:</p>
         <ul>
           <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Functions, Crashlytics, App Check) — account, storage, server functions, crash reports, app integrity.</li>
-          <li><strong>Google Gemini API</strong> — the words you enter and your AI tutor messages are sent through our server to Google's Gemini API to generate content. Your name and email are not sent.</li>
+          <li><strong>Google Gemini API</strong> — the words you enter, your AI tutor messages and the sentences (as text) in your speaking practice sessions are sent through our server to Google's Gemini API to generate content. Your name and email are not sent.</li>
           <li><strong>Google Play Billing</strong> — processes Pro subscription payments.</li>
+          <li><strong>Android speech recognition service</strong> (usually Google) — only when you use the microphone, to turn speech into text on the device or through that provider's service.</li>
         </ul>
         <p>We may disclose data if required by law or to protect the rights and safety of our users.</p>
       </div>
 
       <div id="s5" class="terms-item">
         <h3><span class="n">5</span><span>Storage, transfers and security</span></h3>
-        <p>Your data is stored on Google Cloud / Firebase servers, which may be located outside your country (for example in Taiwan and Singapore). Data is encrypted in transit (HTTPS) and at rest by Google Cloud, and access is restricted so that each user can only read their own data. A copy of your flashcards is kept on your phone so the app works offline.</p>
+        <p>Your data is stored on Google Cloud / Firebase servers, which may be located outside your country (for example in Taiwan and Singapore). Data is encrypted in transit (HTTPS) and at rest by Google Cloud, and access is restricted so that each user can only read their own data. A copy of your flashcards and speaking practice sessions is kept on your phone so the app works offline.</p>
       </div>
 
       <div id="s6" class="terms-item">
         <h3><span class="n">6</span><span>Retention and deletion</span></h3>
         <p>We keep your data while your account exists.</p>
         <ul>
-          <li>You can delete individual flashcards and clear your AI tutor conversation in the app at any time.</li>
+          <li>You can delete individual flashcards, clear your AI tutor conversation and delete individual speaking practice sessions in the app at any time.</li>
           <li>You can delete your account in the app: <strong>Profile → Delete account</strong>. If you no longer have the app, email us from the Gmail address you sign in with; we delete the account within 30 days.</li>
-          <li>When an account is deleted, all of its data is deleted: account information, flashcards, learning activity, usage counters and subscription status.</li>
+          <li>When an account is deleted, all of its data is deleted: account information, flashcards, speaking practice sessions, learning activity, usage counters and subscription status.</li>
           <li>Crash reports are deleted automatically by Firebase within 90 days. Purchase records are kept by Google Play under Google's policies. Deleting your account does not cancel a subscription — cancel it in Google Play.</li>
         </ul>
         <p>Full steps: <a href="xoa-tai-khoan.html#english">Delete your account</a>.</p>
